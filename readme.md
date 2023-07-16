@@ -1,5 +1,6 @@
 # tiktod 
-Wrapper For TikTod API to use download TikTok Post
+[![Publish](https://github.com/fvzy/tiktodv1/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/fvzy/tiktodv1/actions/workflows/npm-publish-github-packages.yml)
+<p>Wrapper For TikTod API to use download TikTok Post</p>
 
 ## Features
 - Download TikTok videos
