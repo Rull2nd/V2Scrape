@@ -18,9 +18,9 @@ $ npm install github:caliphdev/tiktod
 ```
 
 ## Usage
-### Call v1 and v2 variables 
+### Call teh function with variable 
 ```javascript
-const tod = require("tiktod");
+const tik = require("tiktod");
 ```
 ### Download TikTok Video 
 To download TikTok video / Images, use `Download` function with TikTok video URL parameter. 
