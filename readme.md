@@ -14,7 +14,7 @@ $ npm install tiktod
 ```
 ### GitHub Version 
 ```bash
-$ npm install github:caliphdev/tiktod
+$ npm install github:fvzy/tiktod
 ```
 
 ## Usage
