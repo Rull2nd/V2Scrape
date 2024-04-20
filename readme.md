@@ -1,5 +1,5 @@
 # rul-scrape
-[![Publish](https://github.com/rull2nd/rul-scrape/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/rull2nd/rul-scrape/actions/workflows/npm-publish-github-packages.yml)
+[![Publish](https://github.com/rull2nd/v2scrape/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/rull2nd/v2scrape/actions/workflows/npm-publish-github-packages.yml)
 <p>module scraper based rest apiruulzz</p>
 
 ## Features
