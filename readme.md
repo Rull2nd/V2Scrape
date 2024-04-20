@@ -1,46 +1,62 @@
-# tiktod 
-[![Publish](https://github.com/fvzy/tiktodv1/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/fvzy/tiktodv1/actions/workflows/npm-publish-github-packages.yml)
-<p>Wrapper For TikTod API to use download TikTok Post</p>
+# rul-scrape
+[![Publish](https://github.com/rull2nd/rul-scrape/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/rull2nd/rul-scrape/actions/workflows/npm-publish-github-packages.yml)
+<p>module scraper based rest apiruulzz</p>
 
 ## Features
 - Download TikTok videos
 - Download TikTok slide images
 - Stalk User
-- Random Porn ( Don't do it too often, it's not good XD )
+- Gemini AI
+- Blackbox AI
+- Spotify Song Downloader
 
 ## Installation 
 ### NPM Version 
 ```bash
-$ npm install tiktod
+$ npm install rul-scrape
 ```
 ### GitHub Version 
 ```bash
-$ npm install github:fvzy/tiktod
+$ npm install github:irull2nd/rul-scrape
 ```
 
 ## Usage
 ### Call teh function with variable 
 ```javascript
-const tik = require("tiktod");
+const rulz = require("rul-scrape");
 ```
 ### Download TikTok Video 
 To download TikTok video / Images, use `Download` function with TikTok video URL parameter. 
 ```javascript
-tik.download(url).then(data => {
+rulz.tiktok(url).then(data => {
     console.log(data)
 });
 ```
 ### Stalk User by Username 
 To stalk TikTok user, use `stalk` function with TikTok username parameter. 
 ```javascript
-tik.stalk(username).then(data => {
+rulz.stalk(query).then(data => {
   console.log(data)
 });
 ```
-### Random Porn
-To get random porn, use `porn` function without parameter. 
+### Gemini Chat
+To get chat ai `gemini` function with query parameter. 
 ```javascript
-tik.porn().then(data => {
+rulz.gemini(query).then(data => {
+  console.log(data)
+});
+```
+### Blackbox Chat
+To get chat ai `blackbox` function with query parameter. 
+```javascript
+rulz.blackbox(query).then(data => {
+  console.log(data)
+});
+```
+### Spotify
+To get song `spotify` function with url Spotify Song parameter. 
+```javascript
+rulz.spotify(url).then(data => {
   console.log(data)
 });
 ```

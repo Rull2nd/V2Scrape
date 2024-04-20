@@ -2,8 +2,8 @@
   "dependencies": {
     "axios": "^1.3.2"
   },
-  "name": "tiktod",
-  "description": "Simple Wrapper Node for downloading tiktok video/image",
+  "name": "rul-scrape",
+  "description": "scrape module is free for developers",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fvzy/tiktod.git"
+    "url": "git+https://github.com/irull2nd/rul-scrape.git"
   },
   "keywords": [
     "tiktok-dl",
@@ -27,12 +27,15 @@
     "stalktiktok",
     "tiktokstalk",
     "stalk-tiktok",
-    "tiktokdl"
+    "tiktokdl",
+    "gemini-ai",
+    "blackbox-ai",
+    "spotify-dl"
   ],
-  "author": "Ditzzy",
+  "author": "Irull21",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fvzy/tiktod/issues"
+    "url": "https://github.com/rull2nd/rul-scrape/issues"
   },
-  "homepage": "https://github.com/fvzy/tiktod#readme"
+  "homepage": "https://github.com/rull2nd/rul-scrape#readme"
 }

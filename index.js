@@ -1,33 +1,54 @@
 const axios = require("axios");
 const Utils = require("./lib/utils");
 
-//Download Video / Images 
-function download(url) {
+//Download Tiktok Video / Images 
+function tiktok(url) {
   return new Promise((resolve, reject) => {
     if (!url) return reject(new Error("url input is required"));
-    axios.get(Utils.TOD + "/download", { params: { url } })
-      .then((dl) => resolve(dl.data))
+    axios.get(Utils.Rulz + "/download", { params: { url } })
+      .then((response) => resolve(response.data))
       .catch(reject);
   });
 }
 
-//Get User info
-function stalk(username) {
+//Get Tiktok User info
+function stalk(query) {
   return new Promise((resolve, reject) => {
-    if (!url) return reject(new Error("username is required"));
-    axios.get(Utils.TOD + "/stalk", { params: { username } })
+    if (!url) return reject(new Error("query is required"));
+    axios.get(Utils.Rulz + "/tiktokStalk", { params: { query } })
       .then((stalker) => resolve(stalker.data))
       .catch(reject);
   });
 }
 
-//Random Porn Tiktok?
-function porn() {
+//Chat With Gemini ai
+function gemini(query) {
   return new Promise((resolve, reject) => {
-    axios.get(Utils.TOD + "/porn")
-      .then((porner) => resolve(porner.data))
+    if (!query) return reject(new Error("query is required"));
+      axios.get(Utils.Rulz + "/gemini", { params: { query } })
+      .then((gemini) => resolve(gemini.data))
       .catch(reject);
   });
 }
 
-module.exports = { download, stalk, porn };
+//Chat With Blackbox ai
+function blackbox(query) {
+  return new Promise((resolve, reject) => {
+    if (!query) return reject(new Error("query is required"));
+      axios.get(Utils.Rulz + "/blackbox", { params: { query } })
+      .then((blackbox) => resolve(blackbox.data))
+      .catch(reject);
+  });
+}
+
+//Spotify Downloader:v
+function spotify(url) {
+  return new Promise((resolve, reject) => {
+    if (!url) return reject(new Error("url input is required"));
+      axios.get(Utils.Rulz + "/spotify", { params: { url } })
+      .then((spotify) => resolve(spotify.data))
+      .catch(reject);
+  });
+}
+
+module.exports = { tiktok, stalk, gemini, blackbox, spotify };
